@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timeSeriesImportRun xmlns="http://www.wldelft.nl/fews"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="http://www.wldelft.nl/fews
+http://fews.wldelft.nl/schemas/version1.0/timeSeriesImportRun.xsd">
+    <import>
+        <general>
+            <importType>PI</importType> <!-- Indicated we will read PI Files -->
+            <folder>$IMPORT_FOLDER_ROOT$/hefs/</folder>
+            <idMapId>IdImportHEFS</idMapId>
+            <importTimeZone>
+                <timeZoneOffset>+00:00</timeZoneOffset>
+            </importTimeZone>
+        </general>
+        <timeSeriesSet>
+            <moduleInstanceId>ImportHEFS</moduleInstanceId> <!-- The name of this moduleinstance -->
+            <valueType>scalar</valueType>
+            <parameterId>SQIN</parameterId> <!-- The parameter as it will be stored in Delft-Fews,
+                                                          different from the parameter in the XML. Therefore,
+                                                          IdMapping has to be set up-->
+            
+            <locationSetId>HEFS</locationSetId>
+            <timeSeriesType>external forecasting</timeSeriesType>
+            <timeStep unit="second" multiplier="21600"/>
+            
+            <readWriteMode>add originals</readWriteMode>
+            <synchLevel>1</synchLevel>
+            <ensembleId>MEFP</ensembleId>
+            <ensembleMemberIndexRange start="1950" end="1997"/>            
+        </timeSeriesSet>        
+    </import>
+</timeSeriesImportRun>
