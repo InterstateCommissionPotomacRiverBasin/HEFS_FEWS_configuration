@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Run xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.wldelft.nl/fews/PI" xsi:schemaLocation="http://www.wldelft.nl/fews/PI http://fews.wldelft.nl/schemas/version1.0/pi-schemas/pi_run.xsd" version="1.5">
+    <timeZone>0.0</timeZone>
+    <startDateTime date="2019-04-30" time="15:00:00"/>
+    <endDateTime date="2019-04-30" time="15:00:00"/>
+    <time0 date="2019-04-30" time="15:00:00"/>
+    <lastObservationDateTime date="2019-04-30" time="15:00:00"/>
+    <workDir>/home/user1/FEWS/client/config_sa/Models/RTi/HEFS/work</workDir>
+    <outputDiagnosticFile>/home/user1/FEWS/client/config_sa/Models/RTi/HEFS/output/diag.xml</outputDiagnosticFile>
+    <properties>
+        <string key="importDir" value="/home/user1/FEWS/client/config_sa/Import/hefs/"/>
+        <string key="host" value="data7.erh.noaa.gov"/>
+        <string key="lookback" value="2"/>
+        <string key="port" value="22"/>
+        <string key="usr" value="cschultz"/>
+        <string key="pw" value="Shenandoah22"/>
+        <string key="path" value="/hefs_icprb/"/>
+        <string key="archiveDir" value="/home/user1/archivedir_temp/HEFS/"/>
+        <string key="tempDir" value="/home/user1/FEWS/client/config_sa/Import/hefs/gzipped/"/>
+    </properties>
+</Run>
